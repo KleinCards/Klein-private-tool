@@ -8,10 +8,10 @@ Rules file:
 v2rayn/klein-cn-service-direct.json
 ```
 
-GitHub Raw URL:
+Recommended import URL:
 
 ```text
-https://raw.githubusercontent.com/KleinCards/Klein-private-tool/main/v2rayn/klein-cn-service-direct.json
+https://github.com/KleinCards/Klein-private-tool/raw/refs/heads/main/v2rayn/klein-cn-service-direct.json
 ```
 
 Use in v2rayN / V2RNY:
@@ -36,10 +36,21 @@ This rule set keeps the current Klein routing shape:
 7. Final proxy fallback
 ```
 
+The selected service rule currently keeps only a small set of direct Chinese services:
+
+```text
+geosite:bilibili
+geosite:category-collaborate-cn
+geosite:tencent
+geosite:wps
+geosite:xiaohongshu
+domain:gov.cn
+```
+
 It intentionally does not include Windows process rules, such as `Weixin.exe`, `QQ.exe`, or `ToDesk.exe`, so the file stays portable across machines.
 
-The selected service rule uses `geosite:*` references from the local v2rayN/Xray geosite database, plus a few manual `domain:*` entries. It does not add broad rules like `geosite:cn` or `geoip:cn`.
+It also does not add broad rules like `geosite:cn`, `geosite:geolocation-cn`, or `geoip:cn`.
 
 ## Public import status
 
-This repository is public, and the Raw URL above can be fetched without GitHub login. That means v2rayN should be able to import this rule file directly from the URL.
+This repository is public, and the URL above can be fetched without GitHub login. That means v2rayN should be able to import this rule file directly from the URL.
