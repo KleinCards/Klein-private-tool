@@ -37,18 +37,33 @@ This rule set keeps the current Klein routing shape:
 8. Final proxy fallback
 ```
 
-The Windows app process rule currently includes:
+The Windows app process rule currently covers WeChat, QQ, ToDesk, and WPS. The process names were checked against this machine's running process table and install directories:
 
 ```text
-ToDesk.exe
 Weixin.exe
-wps.exe
-哔哩哔哩.exe
+WeixinExt.exe
+WeixinUpdate.exe
+WeChatAppEx.exe
 QQ.exe
+QQEX.exe
+ToDesk.exe
 zagent.exe
 CoreToolsMgrHelper.exe
-WeChatAppEx.exe
-QQEX.exe
+wps.exe
+wpp.exe
+et.exe
+wpspdf.exe
+wpsofd.exe
+wpsoffice.exe
+wpscenter.exe
+wpscloudlaunch.exe
+wpscloudsvr.exe
+wpslingxi.exe
+promecefpluginhost.exe
+ksolaunch.exe
+ksomisc.exe
+kwpswnsserver.exe
+wpsupdate.exe
 ```
 
 The selected service rule currently keeps only a small set of direct Chinese services:
