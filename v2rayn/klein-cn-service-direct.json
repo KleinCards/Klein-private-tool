@@ -87,6 +87,24 @@
     "remarks": "绕过中国公共DNS域名"
   },
   {
+    "id": "direct-windows-apps",
+    "type": "field",
+    "outboundTag": "direct",
+    "process": [
+      "ToDesk.exe",
+      "Weixin.exe",
+      "wps.exe",
+      "哔哩哔哩.exe",
+      "QQ.exe",
+      "zagent.exe",
+      "CoreToolsMgrHelper.exe",
+      "WeChatAppEx.exe",
+      "QQEX.exe"
+    ],
+    "enabled": true,
+    "remarks": "软件绕开"
+  },
+  {
     "id": "direct-selected-cn-services",
     "type": "field",
     "outboundTag": "direct",
