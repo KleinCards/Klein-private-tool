@@ -11,7 +11,7 @@ v2rayn/klein-cn-service-direct.json
 Recommended import URL:
 
 ```text
-https://github.com/KleinCards/Klein-private-tool/raw/refs/heads/main/v2rayn/klein-cn-service-direct.json
+https://github.com/KleinCards/Klein-private-tool/raw/main/v2rayn/klein-cn-service-direct.json
 ```
 
 Use in v2rayN / V2RNY:
@@ -32,8 +32,23 @@ This rule set keeps the current Klein routing shape:
 3. Direct private LAN domains
 4. Direct selected Chinese public DNS IPs
 5. Direct selected Chinese public DNS domains
-6. Direct selected Chinese services/domains
-7. Final proxy fallback
+6. Direct selected Windows app processes
+7. Direct selected Chinese services/domains
+8. Final proxy fallback
+```
+
+The Windows app process rule currently includes:
+
+```text
+ToDesk.exe
+Weixin.exe
+wps.exe
+哔哩哔哩.exe
+QQ.exe
+zagent.exe
+CoreToolsMgrHelper.exe
+WeChatAppEx.exe
+QQEX.exe
 ```
 
 The selected service rule currently keeps only a small set of direct Chinese services:
@@ -47,9 +62,7 @@ geosite:xiaohongshu
 domain:gov.cn
 ```
 
-It intentionally does not include Windows process rules, such as `Weixin.exe`, `QQ.exe`, or `ToDesk.exe`, so the file stays portable across machines.
-
-It also does not add broad rules like `geosite:cn`, `geosite:geolocation-cn`, or `geoip:cn`.
+It does not add broad rules like `geosite:cn`, `geosite:geolocation-cn`, or `geoip:cn`.
 
 ## Public import status
 
